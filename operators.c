@@ -75,6 +75,27 @@ int main(){
 
     printf("%d \n", 7^7);
 
+
+    // to check two digit number
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    printf("%d\n", number>9 && number<100);
+
+    // program to print the average of 3 numbers
+    int num1, num2, num3;
+    printf("Enter the number1: ");
+    scanf("%d", &num1);
+
+    printf("Enter the number2: ");
+    scanf("%d", &num2);
+
+    printf("Enter the number3: ");
+    scanf("%d", &num3);
+
+    printf("average of these three numbers is: %d \n", (num1+num2+num3)/3);
+
+    
   
     return 0;
 }
