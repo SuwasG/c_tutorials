@@ -83,7 +83,81 @@ int main(){
         default:
             printf("Not a valid day. \n");
     }
-        
+
+    // switch properties
+    // a. Cases can be in any order
+    // b. Nested switch (switch inside switch) are allowed.
+
+    int data;
+    printf("Enter a number: ");
+    scanf("%d", &data);
+    if(data>=0){
+        printf("Positive number\n");
+        if (data%2==0){
+            printf("Even Number.\n");
+        }
+        else{
+            printf("Odd Number\n");
+        }
+    }
+    else{
+        printf("Negative number\n");
+    }
+
+    // write a program to give grades to a student
+    int marks;
+    printf("Enter your mark: ");
+    scanf("%d", &marks);
+
+    if(marks<30){
+        printf("C grade\n");
+    }
+    else if(marks>=30 && marks<70){
+        printf("B grade\n");
+    }
+    else if(marks >=70 && marks<90){
+        printf("A grade\n");
+    }
+    else if(marks >=90 && marks<=100){
+        printf("A+ grade\n");
+    }
+    else{
+        printf("Wrong value for marks.\n");
+    }
+    
+    int e =2;
+    if(e=1){ // try to put e=0 and see the result.
+        printf("e is equal to 1.\n");
+    }
+    else{
+        printf("e is not equal to 1.\n");
+    }
+
+
+    int k=2;
+    if(k==1){
+        printf("k is equal to 1.\n");
+    }
+    else{
+        printf("k is not equal to 1.\n");
+    }
+
+    // Write a program to find if a character entered by user is upper case or not
+    char ch;
+    printf("Enter character: ");
+    scanf(" %c", &ch);
+
+    while (getchar() != '\n');
+
+    if(ch>='A' && ch <='Z' ){
+        printf("Uppercase \n");
+    }
+    else if(ch>='a' && ch<='z'){
+        printf("Lowercase.\n");
+    }
+    else{
+        printf("Not english letter.\n");
+    }
 
     return 0;
 }
