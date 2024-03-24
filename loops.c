@@ -230,7 +230,24 @@ int main(){
         fact*=i;
     }
   
-    printf("Final factorial  upto %d is %d: ", factNum, fact);
+    printf("Final factorial  upto %d is %d: \n", factNum, fact);
+
+
+    // Print the reverse of the table for a number n.
+    int reverseNum;
+    printf("Enter a number to print reverse table: ");
+    scanf("%d", &reverseNum);
+
+    for (int i=10; i>=1; i--){
+        printf("%d X %d =  %d\n",reverseNum, i, reverseNum*i);
+    }
+
+    // calculate the sum of all the numbers between 5 and 50 (including 5 and 50)
+    int sum550=0;
+    for(int s=5; s<=50; s++){
+        sum550+=s;
+    }
+    printf("The sum of 5 to 50 is: %d\n", sum550);
     
 
     return 0;
